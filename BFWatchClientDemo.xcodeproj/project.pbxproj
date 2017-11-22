@@ -15,6 +15,13 @@
 		A87E90DF1FC500C100EB57C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87E90DD1FC500C100EB57C7 /* LaunchScreen.storyboard */; };
 		A87E90EA1FC500C200EB57C7 /* BFWatchClientDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A87E90E91FC500C200EB57C7 /* BFWatchClientDemoTests.m */; };
 		A87E90F51FC500C200EB57C7 /* BFWatchClientDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A87E90F41FC500C200EB57C7 /* BFWatchClientDemoUITests.m */; };
+		A87E91091FC502B600EB57C7 /* BFFunctionSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87E91081FC502B600EB57C7 /* BFFunctionSB.storyboard */; };
+		A87E910E1FC503B900EB57C7 /* BFFunctionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A87E910D1FC503B900EB57C7 /* BFFunctionCell.m */; };
+		A87E91101FC503C700EB57C7 /* BFFunctionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A87E910F1FC503C700EB57C7 /* BFFunctionCell.xib */; };
+		A87E91131FC5041A00EB57C7 /* BFFunctionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87E91121FC5041A00EB57C7 /* BFFunctionController.m */; };
+		A87E91181FC5176600EB57C7 /* BFFunctionItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = A87E91171FC5176600EB57C7 /* BFFunctionItemView.m */; };
+		A87E911A1FC5177800EB57C7 /* BFFunctionItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A87E91191FC5177800EB57C7 /* BFFunctionItemView.xib */; };
+		A87E91201FC55D6100EB57C7 /* BFFeatureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A87E911F1FC55D6100EB57C7 /* BFFeatureModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,17 @@
 		A87E90F01FC500C200EB57C7 /* BFWatchClientDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFWatchClientDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A87E90F41FC500C200EB57C7 /* BFWatchClientDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFWatchClientDemoUITests.m; sourceTree = "<group>"; };
 		A87E90F61FC500C200EB57C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A87E91081FC502B600EB57C7 /* BFFunctionSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BFFunctionSB.storyboard; sourceTree = "<group>"; };
+		A87E910C1FC503B900EB57C7 /* BFFunctionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFFunctionCell.h; sourceTree = "<group>"; };
+		A87E910D1FC503B900EB57C7 /* BFFunctionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFFunctionCell.m; sourceTree = "<group>"; };
+		A87E910F1FC503C700EB57C7 /* BFFunctionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFFunctionCell.xib; sourceTree = "<group>"; };
+		A87E91111FC5041A00EB57C7 /* BFFunctionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFFunctionController.h; sourceTree = "<group>"; };
+		A87E91121FC5041A00EB57C7 /* BFFunctionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFFunctionController.m; sourceTree = "<group>"; };
+		A87E91161FC5176600EB57C7 /* BFFunctionItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFFunctionItemView.h; sourceTree = "<group>"; };
+		A87E91171FC5176600EB57C7 /* BFFunctionItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFFunctionItemView.m; sourceTree = "<group>"; };
+		A87E91191FC5177800EB57C7 /* BFFunctionItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFFunctionItemView.xib; sourceTree = "<group>"; };
+		A87E911E1FC55D6100EB57C7 /* BFFeatureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFFeatureModel.h; sourceTree = "<group>"; };
+		A87E911F1FC55D6100EB57C7 /* BFFeatureModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFFeatureModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +119,7 @@
 		A87E90CE1FC500C000EB57C7 /* BFWatchClientDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A87E91021FC5012700EB57C7 /* Function(功能) */,
 				A87E90D21FC500C100EB57C7 /* AppDelegate.h */,
 				A87E90D31FC500C100EB57C7 /* AppDelegate.m */,
 				A87E90D51FC500C100EB57C7 /* ViewController.h */,
@@ -138,6 +157,24 @@
 				A87E90F61FC500C200EB57C7 /* Info.plist */,
 			);
 			path = BFWatchClientDemoUITests;
+			sourceTree = "<group>";
+		};
+		A87E91021FC5012700EB57C7 /* Function(功能) */ = {
+			isa = PBXGroup;
+			children = (
+				A87E91081FC502B600EB57C7 /* BFFunctionSB.storyboard */,
+				A87E91111FC5041A00EB57C7 /* BFFunctionController.h */,
+				A87E91121FC5041A00EB57C7 /* BFFunctionController.m */,
+				A87E910F1FC503C700EB57C7 /* BFFunctionCell.xib */,
+				A87E910C1FC503B900EB57C7 /* BFFunctionCell.h */,
+				A87E910D1FC503B900EB57C7 /* BFFunctionCell.m */,
+				A87E91191FC5177800EB57C7 /* BFFunctionItemView.xib */,
+				A87E91161FC5176600EB57C7 /* BFFunctionItemView.h */,
+				A87E91171FC5176600EB57C7 /* BFFunctionItemView.m */,
+				A87E911E1FC55D6100EB57C7 /* BFFeatureModel.h */,
+				A87E911F1FC55D6100EB57C7 /* BFFeatureModel.m */,
+			);
+			path = "Function(功能)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A87E90DF1FC500C100EB57C7 /* LaunchScreen.storyboard in Resources */,
+				A87E911A1FC5177800EB57C7 /* BFFunctionItemView.xib in Resources */,
+				A87E91101FC503C700EB57C7 /* BFFunctionCell.xib in Resources */,
 				A87E90DC1FC500C100EB57C7 /* Assets.xcassets in Resources */,
+				A87E91091FC502B600EB57C7 /* BFFunctionSB.storyboard in Resources */,
 				A87E90DA1FC500C100EB57C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,8 +317,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A87E90D71FC500C100EB57C7 /* ViewController.m in Sources */,
+				A87E91181FC5176600EB57C7 /* BFFunctionItemView.m in Sources */,
+				A87E91131FC5041A00EB57C7 /* BFFunctionController.m in Sources */,
+				A87E91201FC55D6100EB57C7 /* BFFeatureModel.m in Sources */,
 				A87E90D41FC500C100EB57C7 /* AppDelegate.m in Sources */,
 				A87E90D11FC500C000EB57C7 /* main.m in Sources */,
+				A87E910E1FC503B900EB57C7 /* BFFunctionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2J5C844G24;
 				INFOPLIST_FILE = BFWatchClientDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bf.BFWatchClientDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +486,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2J5C844G24;
 				INFOPLIST_FILE = BFWatchClientDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bf.BFWatchClientDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

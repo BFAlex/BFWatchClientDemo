@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BFFunctionController.h"
 
 @interface ViewController ()
 
@@ -25,5 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)actionFuncBtn:(UIButton *)sender {
+    BFFunctionController *fc = [BFFunctionController functionController];
+    if (fc) {
+        [self.navigationController pushViewController:fc animated:true];
+    }
+}
 
 @end
