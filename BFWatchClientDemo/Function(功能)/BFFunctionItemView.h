@@ -23,8 +23,6 @@
 
 + (instancetype)functionItemWithFrame:(CGRect)frame;
 
-//- (void)configureItemViewWithIndexPath:(NSIndexPath *)indexPath;
-//- (void)configureItemViewWithIndexPath:(NSIndexPath *)indexPath andDelegate:(id<BFFunctionItemViewDelegate>)delegate;
 - (void)configureItemView:(BFFeatureModel *)model indexPath:(NSIndexPath *)indexPath andDelegate:(id<BFFunctionItemViewDelegate>)delegate;
 
 @end

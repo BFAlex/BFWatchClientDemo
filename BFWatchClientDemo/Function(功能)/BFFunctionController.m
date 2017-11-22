@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *featureListTV;
 
 @property (nonatomic, strong) NSArray *flDataSourseArr;
+@property (nonatomic, strong) NSArray *flSectionTitleArr;
 
 @end
 
@@ -24,14 +25,27 @@
 
 - (NSArray *)flDataSourseArr {
     if (!_flDataSourseArr) {
-        NSArray *firstFuncArr = @[@"11", @"12"];
-        NSArray *secondFuncArr = @[@"21", @"22", @"23"];
-        NSArray *thirdFuncArr = @[@"31"];
-        NSArray *forthFuncArr = @[@"41", @"42", @"43", @"44", @"45"];
-        _flDataSourseArr =@[firstFuncArr, secondFuncArr, thirdFuncArr, forthFuncArr];
+        NSArray *firstSectionArr = [self setupFirstSectionArr];
+        NSArray *secondSectionArr = [self setupSecondSectionArr];
+        NSArray *thirdSectionArr = [self setupThirdSectionArr];
+        NSArray *forthSectionArr = [self setupForthSectionArr];
+        NSArray *fifthSectionArr = [self setupFifthSectionArr];
+        _flDataSourseArr =@[firstSectionArr,
+                            secondSectionArr,
+                            thirdSectionArr,
+                            forthSectionArr,
+                            fifthSectionArr];
     }
     
     return _flDataSourseArr;
+}
+
+- (NSArray *)flSectionTitleArr {
+    if (!_flSectionTitleArr) {
+        _flSectionTitleArr = @[@"功能1", @"功能2", @"功能3", @"功能4"];
+    }
+    
+    return _flSectionTitleArr;
 }
 
 #pragma mark - <Life Cycle>
@@ -69,10 +83,51 @@
 - (NSArray *)setupFirstSectionArr {
     NSMutableArray *arr = [[NSMutableArray alloc] init];
     
+    // temple
+    for (int i = 0; i < 2; i++) {
+        [arr addObject:[NSString stringWithFormat:@"xxx"]];
+    }
+    
     return arr;
 }
 - (NSArray *)setupSecondSectionArr {
     NSMutableArray *arr = [[NSMutableArray alloc] init];
+    
+    // temple
+    for (int i = 0; i < 3; i++) {
+        [arr addObject:[NSString stringWithFormat:@"xxx"]];
+    }
+    
+    return arr;
+}
+- (NSArray *)setupThirdSectionArr {
+    NSMutableArray *arr = [[NSMutableArray alloc] init];
+    
+    // temple
+    for (int i = 0; i < 1; i++) {
+        [arr addObject:[NSString stringWithFormat:@"xxx"]];
+    }
+    
+    return arr;
+}
+- (NSArray *)setupForthSectionArr {
+    NSMutableArray *arr = [[NSMutableArray alloc] init];
+    
+    // temple
+    for (int i = 0; i < 5; i++) {
+        [arr addObject:[NSString stringWithFormat:@"xxx"]];
+    }
+    
+    return arr;
+}
+
+- (NSArray *)setupFifthSectionArr {
+    NSMutableArray *arr = [[NSMutableArray alloc] init];
+    
+    // temple
+    for (int i = 0; i < 7; i++) {
+        [arr addObject:[NSString stringWithFormat:@"xxx"]];
+    }
     
     return arr;
 }
@@ -95,7 +150,12 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"功能分类";
+    
+    if (self.flSectionTitleArr.count > section) {
+        return self.flSectionTitleArr[section];
+    } else {
+        return @"其他功能";
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -116,13 +176,12 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    BFFunctionCell *cell = [BFFunctionCell shareFunctionCell];
     
-    NSArray *sectionArr = self.flDataSourseArr[indexPath.section];
     BFFunctionCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellReuseID];
     if (!cell) {
         cell = [BFFunctionCell cell];
     }
+    NSArray *sectionArr = self.flDataSourseArr[indexPath.section];
     [cell configureCellWithItemArr:sectionArr indexPath:indexPath itemDelegate:self];
     
     return cell;

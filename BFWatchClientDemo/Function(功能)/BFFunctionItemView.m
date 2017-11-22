@@ -26,15 +26,6 @@
     return item;
 }
 
-//- (void)configureItemViewWithIndexPath:(NSIndexPath *)indexPath {
-//    [self configureItemViewWithIndexPath:indexPath andDelegate:nil];
-//}
-//
-//- (void)configureItemViewWithIndexPath:(NSIndexPath *)indexPath andDelegate:(id<BFFunctionItemViewDelegate>)delegate {
-//    
-//    [self configureItemView:nil indexPath:indexPath andDelegate:delegate];
-//}
-
 - (void)configureItemView:(BFFeatureModel *)model indexPath:(NSIndexPath *)indexPath andDelegate:(id<BFFunctionItemViewDelegate>)delegate {
     
     _modelIndexPath = indexPath;

@@ -11,12 +11,8 @@
 
 @interface BFFunctionCell : UITableViewCell
 
-//+ (instancetype)shareFunctionCell;
-//+ (instancetype)functionCellWithItemArr:(NSArray *)itemArr;
-
 + (instancetype)cell;
 
-//- (void)configureCellWithItemArr:(NSArray *)itemArr indexPath:(NSIndexPath *)indexPath;
 - (void)configureCellWithItemArr:(NSArray *)itemArr indexPath:(NSIndexPath *)indexPath itemDelegate:(id<BFFunctionItemViewDelegate>) delegate;
 
 @end
